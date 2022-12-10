@@ -1,0 +1,218 @@
+{
+    "animais": [
+        {
+            "id": 1,
+            "nome": "Bob Luis da Silveira",
+            "tipo": "Cachorro",
+            "raca": "daschund",
+            "dono_id": 1,
+            "idade": 10
+        },
+        {
+            "id": 3,
+            "nome": "Bituco",
+            "tipo": "P\u00e1ssaro",
+            "raca": "Vira-Lata",
+            "dono_id": 4,
+            "idade": 1
+        },
+        {
+            "id": 4,
+            "nome": "Excluido",
+            "tipo": "Tartaruga",
+            "raca": "Vira-Lata",
+            "dono_id": 3,
+            "idade": 102
+        },
+        {
+            "id": 2,
+            "nome": "Diana",
+            "tipo": "Gato",
+            "raca": "British Shorthair",
+            "dono_id": 28,
+            "idade": 2
+        },
+        {
+            "id": 5,
+            "nome": "Pelucio",
+            "tipo": "Coelho",
+            "raca": "Vira-Lata",
+            "dono_id": 6,
+            "idade": 2
+        },
+        {
+            "id": 6,
+            "nome": "Flynn",
+            "tipo": "Cachorro",
+            "raca": "bouvier",
+            "dono_id": 28,
+            "idade": 1
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Caio Silveira",
+            "email": "caio@gmail.com",
+            "cpf": "507.478.999-17",
+            "cidade": "Orl\u00e2ndia",
+            "endereco": "Avenida E",
+            "celular": "(16) 99294-1653",
+            "telefone": "",
+            "animais": [
+                {
+                    "id": 1,
+                    "nome": "Bob Luis da Silveira",
+                    "tipo": "Cachorro",
+                    "raca": "daschund",
+                    "dono_id": 1,
+                    "idade": 10
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Pedro",
+            "email": "pedro@gmail.com",
+            "cpf": "507.478.999-17",
+            "cidade": "Orl\u00e2ndia",
+            "endereco": "Avenida E",
+            "celular": "(16) 99294-1653",
+            "telefone": "",
+            "animais": []
+        },
+        {
+            "id": 3,
+            "nome": "Arislan",
+            "email": "",
+            "cpf": "12345676",
+            "cidade": "",
+            "endereco": "3213",
+            "celular": "",
+            "telefone": "",
+            "animais": [
+                {
+                    "id": 4,
+                    "nome": "Excluido",
+                    "tipo": "Tartaruga",
+                    "raca": "Vira-Lata",
+                    "dono_id": 3,
+                    "idade": 102
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "Claudia",
+            "email": "emailnaoexiste@gmail.com",
+            "cpf": "12345678910",
+            "cidade": "",
+            "endereco": "avenida 3",
+            "celular": "",
+            "telefone": "",
+            "animais": [
+                {
+                    "id": 3,
+                    "nome": "Bituco",
+                    "tipo": "P\u00e1ssaro",
+                    "raca": "Vira-Lata",
+                    "dono_id": 4,
+                    "idade": 1
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "nome": "Oswaldo",
+            "email": "oswaldo@gmail.com",
+            "cpf": "507.478.999-17",
+            "cidade": "Orl\u00e2ndia",
+            "endereco": "Avenida O",
+            "celular": "(16) 99294-1653",
+            "telefone": "",
+            "animais": [
+                {
+                    "id": 5,
+                    "nome": "Pelucio",
+                    "tipo": "Coelho",
+                    "raca": "Vira-Lata",
+                    "dono_id": 6,
+                    "idade": 2
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "nome": "Esther Mello",
+            "email": "esther@gmail.com",
+            "cpf": "12345678910",
+            "cidade": "Orl\u00e2ndia",
+            "endereco": "Rua 12",
+            "celular": "",
+            "telefone": "",
+            "animais": [
+                {
+                    "id": 2,
+                    "nome": "Diana",
+                    "tipo": "Gato",
+                    "raca": "British Shorthair",
+                    "dono_id": 28,
+                    "idade": 2
+                },
+                {
+                    "id": 6,
+                    "nome": "Flynn",
+                    "tipo": "Cachorro",
+                    "raca": "bouvier",
+                    "dono_id": 28,
+                    "idade": 1
+                }
+            ]
+        }
+    ],
+    "exames": [],
+    "pedidos": [],
+    "produtos": [
+        {
+            "id": 1,
+            "desc": "Petit Gateau",
+            "tipo": "Alimento",
+            "valorUnit": 150.0,
+            "qtde": 2,
+            "validade": null
+        },
+        {
+            "id": 2,
+            "desc": "Rato",
+            "tipo": "Brinquedo",
+            "valorUnit": 10.0,
+            "qtde": 5,
+            "validade": null
+        },
+        {
+            "id": 3,
+            "desc": "Pena",
+            "tipo": "Brinquedo",
+            "valorUnit": 2.0,
+            "qtde": 20,
+            "validade": null
+        },
+        {
+            "id": 4,
+            "desc": "Whiskas",
+            "tipo": "Alimento",
+            "valorUnit": 25.0,
+            "qtde": 3,
+            "validade": null
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "usuario": "caio",
+            "senha": "123",
+            "nome": "Caio",
+            "sobrenome": "Silveira"
+        }
+    ]
+}

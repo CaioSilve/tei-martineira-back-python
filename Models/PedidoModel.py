@@ -14,7 +14,7 @@ class PedidoModel(db.Model):
 
     def __init__(self, cliente_id, data):
         self.cliente_id = cliente_id
-        self.data = datetime.strptime(data, '%d/%m/%Y %H:%M')
+        self.data = datetime.strptime(data, '%d/%m/%Y')
 
     def json(self):
         total = 0.0
@@ -27,7 +27,7 @@ class PedidoModel(db.Model):
             'cliente_id': self.cliente_id,
             'precoTotal': self.precoTotal,
             "produtos": [produto.json() for produto in self.produtos],
-            'data': self.data.strftime('%d/%m/%Y %H:%M')
+            'data': self.data.strftime('%d/%m/%Y')
         }
 
     @classmethod
@@ -42,7 +42,7 @@ class PedidoModel(db.Model):
         db.session.commit()
 
     def update_pedido(self, data):
-        self.data = datetime.strptime(data, '%d/%m/%Y %H:%M')
+        self.data = datetime.strptime(data, '%d/%m/%Y')
 
     def delete_pedido(self):
         db.session.delete(self)

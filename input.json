@@ -1,0 +1,55 @@
+{
+    "usuarios": [
+        {
+            "usuario": "caio",
+            "senha": "123",
+            "nome": "Caio",
+            "sobrenome": "Silveira"
+        }
+    ],
+    "clientes": [
+        {
+            "nome": "Caio Silveira",
+            "email": "caio@gmail.com",
+            "cpf": "507.478.999-17",
+            "cidade": "Orl\u00e2ndia",
+            "endereco": "Avenida E",
+            "celular": "(16) 99294-1653",
+            "telefone": ""
+        }
+    ],
+    "animais": [
+        {
+            "nome": "Bob Luis da Silveira",
+            "tipo": "Cachorro",
+            "raca": "daschund",
+            "dono_id": 1,
+            "idade": 10
+        },
+        {
+            "nome": "Bituco",
+            "tipo": "P\u00e1ssaro",
+            "raca": "Vira-Lata",
+            "dono_id": 4,
+            "idade": 1
+        }
+    ],
+    "exames": [],
+    "produtos": [
+        {
+            "desc": "Petit Gateau",
+            "tipo": "Alimento",
+            "valorUnit": 150.0,
+            "qtde": 2,
+            "validade": null
+        },
+        {
+            "desc": "Rato",
+            "tipo": "Brinquedo",
+            "valorUnit": 10.0,
+            "qtde": 5,
+            "validade": null
+        }
+    ],
+    "pedidos": []
+}

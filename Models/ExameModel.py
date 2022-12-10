@@ -10,13 +10,17 @@ class ExameModel(db.Model):
     paciente = db.Column(db.Integer, db.ForeignKey("animal.id"))
     procedimento = db.Column(db.String(80))
     resultado = db.Column(db.String(80))
-    data = db.Column(db.DateTime)
+    data = db.Column(db.Date)
+    horaInicio = db.Column(db.String(80))
+    horaFim = db.Column(db.String(80))
 
-    def __init__(self, paciente, procedimento, resultado, data):
+    def __init__(self, paciente, procedimento, resultado, data, horaInicio, horaFim):
         self.paciente = paciente
         self.procedimento = procedimento
         self.resultado = resultado
-        self.data = datetime.strptime(data, '%d/%m/%Y %H:%M')
+        self.data = datetime.strptime(data, '%d/%m/%Y')
+        self.horaInicio = horaInicio
+        self.horaFim = horaFim
 
     def json(self):
         return {
@@ -24,7 +28,9 @@ class ExameModel(db.Model):
             'paciente': self.paciente,
             'procedimento': self.procedimento,
             'resultado': self.resultado,
-            'data': self.data.strftime('%d/%m/%Y %H:%M')
+            'data': self.data.strftime('%d/%m/%Y'),
+            'horaInicio': self.horaInicio,
+            'horaFim': self.horaFim
         }
 
     @classmethod
@@ -38,10 +44,12 @@ class ExameModel(db.Model):
         db.session.add(self)
         db.session.commit()
 
-    def update_exame(self, procedimento, resultado, data):
+    def update_exame(self, procedimento, resultado, data, horaInicio, horaFim):
         self.procedimento = procedimento
         self.resultado = resultado
-        self.data = datetime.strptime(data, '%d/%m/%Y %H:%M')
+        self.data = datetime.strptime(data, '%d/%m/%Y')
+        self.horaInicio = horaInicio
+        self.horaFim = horaFim
 
     def delete_exame(self):
         db.session.delete(self)

@@ -49,6 +49,8 @@ def tratar_dados_exame(dados):
     dados.add_argument('procedimento')
     dados.add_argument('resultado')
     dados.add_argument('data')
+    dados.add_argument('horaInicio')
+    dados.add_argument('horaFim')
 
     return dados.parse_args()
 
@@ -56,6 +58,8 @@ def tratar_dados_exame_update(dados):
     dados.add_argument('procedimento')
     dados.add_argument('resultado')
     dados.add_argument('data')
+    dados.add_argument('horaInicio')
+    dados.add_argument('horaFim')
 
     return dados.parse_args()
 
